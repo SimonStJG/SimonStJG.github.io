@@ -15,9 +15,7 @@ TODO
 
  * Work out what the exact dimensions are, including the widths of the plywood I used.
  
-![Cajón skeleton](/images/cajon-skeleton.jpg){:width="50%"}![Cajón undecorated](/images/cajon-not-decorated.jpg){:width="50%"}
-
-![Cajón being oiled](/images/cajon-oiling.jpg){:width="50%"}![Cajón with feet](/images/cajon-feet.jpg){:width="50%"}
+![Cajón skeleton](/images/cajon-skeleton.jpg){:width="25%"}![Cajón undecorated](/images/cajon-not-decorated.jpg){:width="25%"}![Cajón being oiled](/images/cajon-oiling.jpg){:width="25%"}![Cajón with feet](/images/cajon-feet.jpg){:width="25%"}
 
 ## Snare ##
 

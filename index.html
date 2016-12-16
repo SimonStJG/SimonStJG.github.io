@@ -1,20 +1,46 @@
 ---
-layout: grid-selection
+layout: default
 ---
 
 <div class="home">
 
-  <div class="gr-row">
-      <div class="gr-col1">
-        <span class="post-meta">BOO</span>
-      </div>
-      <div class="gr-col2">
-        <span class="post-meta">BOO</span>
-      </div>
-      <div class="gr-col3">
-        <span class="post-meta">BOO</span>
-      </div>
-    </div>
+  {% for post in site.posts %}
+
+    {% capture current_column %}{% cycle '1', '2', '3' %}{% endcapture %}
+
+    {% case current_column %}
+      {% when '1' %}
+        <div class="gr-row">
+          <div class="gr-col">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+              <img src="images/cajon-finished-back.jpg"/>
+            </a>
+           </div>
+      {% when '2' %}
+          <div class="gr-col">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+              <img src="images/cajon-finished-back.jpg"/>
+            </a> 
+          </div>
+      {% when '3' %}
+          <div class="gr-col">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+              <img src="images/cajon-finished-back.jpg"/>
+            </a>
+          </div>
+        </div>  
+    {% endcase %}
+
+    {% if forloop.last %}
+      {% capture length_mod_3 %}{{ forloop.length | modulo : 3 }}{% endcapture %}
+      {% if length_mod_3 != '0' %}
+          <!-- Oh what fun this language is. -->
+        </div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+<!-- 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
@@ -26,5 +52,5 @@ layout: grid-selection
       </li>
     {% endfor %}
   </ul>
-
+ -->
 </div>

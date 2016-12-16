@@ -1,6 +1,7 @@
 /**
- * Grid mixin borrowed from:
+ * Grid mixin initially borrowed from:
  * http://thesassway.com/intermediate/simple-grid-mixins
+ * Subsequently ruined by using margin instead of padding.
  */
 
 
@@ -11,30 +12,23 @@
   font-size: 0;
 }
 
+@mixin col($sum, $gap: 1em, $align: top) {
+  $gap_offset: 2 * $gap;
+  $flange: percentage(1/$sum);
+  width: calc(#{$flange} - #{$gap_offset});
 
-@mixin col($sum, $gap: 1em, $align: top, $first: false, $last: false) {
-  width: percentage(1/$sum);
   font-size: 16px;
   display: inline-block;
   vertical-align: $align;
   box-sizing: border-box;
-  padding-left: if($first, 0, $gap);
-  padding-right: if($last, 0, $gap);
-
+  margin: $gap;
+  margin: $gap;
   // @media only screen and (min-width: 768px) {
   //   width: percentage($col/$sum);
   //   vertical-align: $align;
   // }
 }
 
-.gr-col1 {
-  @include col(3, $first: true);  
-}
-
-.gr-col2 {
+.gr-col {
   @include col(3);  
-}
-
-.gr-col3 {
-  @include col(3, $last: true);  
 }

@@ -8,10 +8,8 @@
 # Site settings
 title: SimonStJG
 email: lol@no
-description: The boring details of my life.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://SimonStJG.githubpages.io" # the base hostname & protocol for your site
-twitter_username: SimonStJG
 github_username:  SimonStJG
 
 # Build settings

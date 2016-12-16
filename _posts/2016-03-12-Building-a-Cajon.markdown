@@ -2,7 +2,7 @@
 layout: post
 title:  "Cajon"
 date:   2016-03-12 12:43:39 +0000
-categories: making
+tags: making
 thumbnail: cajon-finished-back.jpg
 ---
 

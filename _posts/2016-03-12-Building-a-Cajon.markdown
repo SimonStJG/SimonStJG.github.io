@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Building a Cajon"
+title:  "Cajon"
 date:   2016-03-12 12:43:39 +0000
 categories: diy
 thumbnail: cajon-finished-back.jpg

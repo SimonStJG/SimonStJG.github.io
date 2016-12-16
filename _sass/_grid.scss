@@ -6,8 +6,8 @@
 
 
 // TODO SJG Check screen width etc
+// TODO SJG Verify fonts for grid
 
-// TODO SJG make this a mixin?
 .gr-row {
   font-size: 0;
 }
@@ -17,6 +17,7 @@
   $flange: percentage(1/$sum);
   width: calc(#{$flange} - #{$gap_offset});
 
+  // There is some trickery here with margins.
   font-size: 16px;
   display: inline-block;
   vertical-align: $align;
@@ -33,9 +34,37 @@
   @include col(3);  
 }
 
-.overlay-text {
-  color: white;
-  left: 2em;
+/**
+ * Text overlays
+ */
+
+.overlay-parent {
+  position: relative;
+}
+
+.overlay-text-wrapper {
+  text-align: center;
+  left: 0;
   position: absolute;
   top: 0;
+  width: 100%;
+
+  // Without this, hover won't work properly on opaque-image.
+  pointer-events: none;
+}
+
+.overlay-text {
+  font-size: 32px;
+  color: $brand-color
+
+  // Without this, hover won't work properly on opaque-image.
+  pointer-events: none;
+}
+
+.opaque-image {
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }

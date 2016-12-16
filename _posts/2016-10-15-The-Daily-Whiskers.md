@@ -6,6 +6,10 @@ categories: code
 thumbnail: dailywhiskers-thumbnail.jpg
 ---
 
-[The Daily Whiskers](https://github.com/SimonStJG/TheDailyWhiskers)
+![Example Daily Whiskers](/images/daily-whiskers-full.png){: .float-right}
 
-[Thumbnail picture credit](https://www.reddit.com/r/cats/comments/5g87h3/his_name_is_waffles/?ref=search_posts)
+Pulls pictures from Reddit's [/r/cats](https://www.reddit.com/r/cats) every morning, emails them to you with a funny name.  
+
+Currently running on my Raspberry PI and even available on github, at [SimonStJG/TheDailyWhiskers](https://github.com/SimonStJG/TheDailyWhiskers)
+
+Thumbnail picture credit: [www.reddit.com/r/cats/comments/5g87h3/his_name_is_waffles](https://www.reddit.com/r/cats/comments/5g87h3/his_name_is_waffles/)

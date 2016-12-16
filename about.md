@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Every single personal portfolio site you've ever seen.  It's even on github pages.  Every sentance is probably in the present tense, and almost absurdly compressed.  
+Every single personal portfolio site you've ever seen.  It's even on github pages.  Every sentance is probably in the present tense.  
 
 Here's [another website](http://SimonStJG.org) from a few years ago.
 

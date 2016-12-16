@@ -31,7 +31,8 @@
 }
 
 .gr-col {
-  @include col(3);  
+  // If you change this, you need to update it in index.html too.
+  @include col(4);  
 }
 
 /**
@@ -55,10 +56,7 @@
 
 .overlay-text {
   font-size: 32px;
-  color: $brand-color
-
-  // Without this, hover won't work properly on opaque-image.
-  pointer-events: none;
+  color: $brand-color;
 }
 
 .opaque-image {

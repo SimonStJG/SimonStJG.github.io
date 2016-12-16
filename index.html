@@ -4,33 +4,6 @@ layout: default
 
 <div class="home">
 
-  {% for post in site.posts %}
-    {% comment %}  Loop indices begin at 1 :(  {% endcomment %}
-    {% capture length_mod_4 %}{{ forloop.index | minus: 1 | modulo : 4 }}{% endcapture %}
-
-    <!-- Column {{ length_mod_4 }} -->
-    {% if length_mod_4 == '0' %}
-      <div class="gr-row">
-    {% endif %}
-        <div class="gr-col overlay-parent">
-          <a href="{{ post.url | prepend: site.baseurl }}">
-            <img class="opaque-image" src="images/{{ post.thumbnail }}" />
-            <div class="overlay-text-wrapper">
-              <span class="overlay-text">{{ post.title }}</span>
-            </div>
-          </a>
-        </div>
-
-    {% if length_mod_4 == '3' %}  
-      </div> 
-    {% endif %}
-
-    {% if forloop.last %}
-      {% if length_mod_4 != '3' %}
-          <!-- Oh what fun this language is. -->
-        </div>
-      {% endif %}
-    {% endif %}
-  {% endfor %}
+  {% include index-grid.html title="Code" tags=site.tags.code %}
 
 </div>

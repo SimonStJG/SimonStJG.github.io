@@ -2,7 +2,7 @@
 layout: post
 title:  "The Daily Whiskers"
 date:   2016-10-15
-categories: code
+tags: code
 thumbnail: dailywhiskers-thumbnail.jpg
 ---
 

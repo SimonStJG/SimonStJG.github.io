@@ -2,7 +2,7 @@
 layout: post
 title:  "Gin Lights"
 date:   2016-01-15
-categories: diy
+tags: making
 thumbnail: gin-lights-thumbnail.jpg
 ---
 

@@ -2,10 +2,10 @@
 
 {% for post in include.tags %}
   {% comment %}  Loop indices begin at 1 :(  {% endcomment %}
-  {% capture length_mod_4 %}{{ forloop.index | minus: 1 | modulo : 4 }}{% endcapture %}
+  {% capture length_mod %}{{ forloop.index | minus: 1 | modulo : 3 }}{% endcapture %}
 
-  <!-- Column {{ length_mod_4 }} -->
-  {% if length_mod_4 == '0' %}
+  <!-- Column {{ length_mod }} -->
+  {% if length_mod == '0' %}
     <div class="gr-row">
   {% endif %}
       <div class="gr-col overlay-parent">
@@ -17,12 +17,12 @@
         </a>
       </div>
 
-  {% if length_mod_4 == '3' %}  
+  {% if length_mod == '2' %}  
     </div> 
   {% endif %}
 
   {% if forloop.last %}
-    {% if length_mod_4 != '3' %}
+    {% if length_mod != '2' %}
         <!-- Oh what fun this language is. -->
       </div>
     {% endif %}

@@ -4,8 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Every single personal portfolio site you've ever seen.  It's even on github pages.  Every sentance is probably in the present tense.  
+This is every single personal portfolio site you've ever seen.  It's even on github pages.  Every sentance is probably in the present tense.
 
-Here's [another website](http://SimonStJG.org) from a few years ago.
+* [LinkedIn](https://www.linkedin.com/in/simon-st-john-green-3341539b)
+* [Github](https://github.com/SimonStJG)
 
-Source [here](https://github.com/SimonStJG/SimonStJG.github.io), I don't know a whole lot about making things look pretty, so I ripped off [The Jekyll New Theme](https://github.com/jglovier/jekyll-new) and simplified it until I could understand roughly what was happening.
+There's more info on this website [here]({% post_url 2016-12-15-Website %})

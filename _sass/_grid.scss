@@ -32,7 +32,7 @@
 
 .gr-col {
   // If you change this, you need to update it in index.html too.
-  @include col(4);  
+  @include col(3);  
 }
 
 /**
@@ -60,6 +60,7 @@
 }
 
 .opaque-image {
+  width: 100%;
   opacity: 0.2;
 
   &:hover {

@@ -3,6 +3,7 @@ layout: post
 title:  "Building a Cajon"
 date:   2016-03-12 12:43:39 +0000
 categories: diy
+thumbnail: cajon-finished-back.jpg
 ---
 
 A [Cajón](https://en.wikipedia.org/wiki/Caj%C3%B3n) is basically a huge wooden box which you sit on and then hit the front of to make a bass-y drum sound, or a snare-y sound if you put a snare in it.

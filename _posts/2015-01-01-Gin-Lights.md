@@ -3,6 +3,7 @@ layout: post
 title:  "Gin Lights"
 date:   2016-01-15
 categories: diy
+thumbnail: gin-lights-thumbnail.jpg
 ---
 
 I made some lights out of some gin bottles.

@@ -1,8 +1,9 @@
 TODO:
   Put a decent picture in for the stompbox.
-  Add all the right meta tags, eg. Facebook OG.
+  Test metatags.  Do metatags properly, including handling pictures / thumbnails.
   Test on all device sizes.
-  Add a README and a licence.
   Merge old personal website etc
   Compress thumbnails.
   Put pictures in their own directories
+
+  Fixup story generator and add that too.

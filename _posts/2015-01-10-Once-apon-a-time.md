@@ -1,10 +1,12 @@
 ---
 layout: post
 title:  "Once upon a time"
-date:   2016-10-15
+date:   2014-12-12
 tags: code
 thumbnail: dailywhiskers-thumbnail.jpg
 ---
+
+"Choose your own adventure" style game, basic template available [here](/raw/once-upon-a-time/#/)
 
 My first foray into [AngularJS](https://angularjs.org/) and [on Github](https://github.com/SimonStJG/once-apon-a-time).  Originally a choose-your-own-adventure story I made about a friend, and then another friend, but I've now anonymised it (it wasn't the sort of thing which is acceptable to leave on the internet).
 

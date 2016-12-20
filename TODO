@@ -1,14 +1,15 @@
 TODO:
+  Rename the RAW folder to something less crap.
   Find a picture for the story generator.
   Put a decent picture in for the stompbox.
   Test metatags, pictures are not working :(.  Do metatags properly, including handling pictures / thumbnails.
   Test on all device sizes.
-  Merge old personal website etc.
+  Merge old personal website.
+  Merge old academic website.
   Compress thumbnails.
-  Put pictures in their own directories
   Lightbox-style expandable pictures?
-  Fixup story  generator and add that too.
 
+Jess' comments  
   Better fonts.
   Make pictures full colour with white text.
   Top image is too colourful - make thinner and black and white?

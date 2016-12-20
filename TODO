@@ -1,9 +1,14 @@
 TODO:
+  Find a picture for the story generator.
   Put a decent picture in for the stompbox.
-  Test metatags.  Do metatags properly, including handling pictures / thumbnails.
+  Test metatags, pictures are not working :(.  Do metatags properly, including handling pictures / thumbnails.
   Test on all device sizes.
-  Merge old personal website etc
+  Merge old personal website etc.
   Compress thumbnails.
   Put pictures in their own directories
+  Lightbox-style expandable pictures?
+  Fixup story  generator and add that too.
 
-  Fixup story generator and add that too.
+  Better fonts.
+  Make pictures full colour with white text.
+  Top image is too colourful - make thinner and black and white?

@@ -8,7 +8,7 @@ thumbnail: cajon-finished-back.jpg
 
 A [Cajón](https://en.wikipedia.org/wiki/Caj%C3%B3n) is basically a huge wooden box which you sit on and then hit the front of to make a bass-y drum sound, or a snare-y sound if you put a snare in it.
 
-# Design #
+## Design ##
 
 It's a glorified wooden box made of plywood with a snare inside.  The only important detail is that the front face needs to be made out of thinner plywood so it can act like the skin of a drum.
 
@@ -30,7 +30,7 @@ To add a bit more breadth to the sound, I added a snare, like you'd stretch acro
 
 ![Cajón snare diagram](/images/cajon-snare-diagram.jpg)
 
-# Finished Product #
+## Finished Product ##
 
 In all it's glory:
 

@@ -24,6 +24,40 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+
+
+     h1 {
+    font-size: 40px;
+
+    @include media-query($on-laptop) {
+        font-size: 28px;
+    }
+}
+
+     h2 {
+    font-size: 32px;
+
+    @include media-query($on-laptop) {
+        font-size: 28px;
+    }
+}
+
+h3 {
+    font-size: 26px;
+
+    @include media-query($on-laptop) {
+        font-size: 22px;
+    }
+}
+
+ h4 {
+    font-size: 20px;
+
+    @include media-query($on-laptop) {
+        font-size: 18px;
+    }
+}
+
 }
 
 
@@ -37,7 +71,6 @@ ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
-
 
 
 /**

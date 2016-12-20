@@ -24,6 +24,8 @@
   box-sizing: border-box;
   margin: $gap;
   margin: $gap;
+
+  // TODO
   // @media only screen and (min-width: 768px) {
   //   width: percentage($col/$sum);
   //   vertical-align: $align;
@@ -55,7 +57,6 @@
 }
 
 .overlay-text {
-  font-size: 32px;
   color: $brand-color;
 }
 

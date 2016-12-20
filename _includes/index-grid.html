@@ -1,10 +1,9 @@
-<h2>{{ include.title }}</h2>
+<h1>{{ include.title }}</h1>
 
 {% for post in include.tags %}
   {% comment %}  Loop indices begin at 1 :(  {% endcomment %}
   {% capture length_mod %}{{ forloop.index | minus: 1 | modulo : 3 }}{% endcapture %}
 
-  <!-- Column {{ length_mod }} -->
   {% if length_mod == '0' %}
     <div class="gr-row">
   {% endif %}
@@ -12,7 +11,7 @@
         <a href="{{ post.url | prepend: site.baseurl }}">
           <img class="opaque-image" src="images/{{ post.thumbnail }}" />
           <div class="overlay-text-wrapper">
-            <span class="overlay-text">{{ post.title }}</span>
+            <h2 class="overlay-text">{{ post.title }}</h2>
           </div>
         </a>
       </div>
@@ -20,11 +19,10 @@
   {% if length_mod == '2' %}  
     </div> 
   {% endif %}
-
   {% if forloop.last %}
     {% if length_mod != '2' %}
-        <!-- Oh what fun this language is. -->
       </div>
     {% endif %}
   {% endif %}
+
 {% endfor %}

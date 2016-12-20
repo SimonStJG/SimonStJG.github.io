@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="author" content="Simon St John-Green" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="std-style.css"></link>
+  <link rel="stylesheet" type="text/css" href="global-style.css"></link>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200' rel='stylesheet' type='text/css'></link>
+  <title>Connecting to the University of Southampton fileshares using Linux</title>
+</head>
+<body>
+<div id="container">
+  <div id="title"><h1>Simon St. John-Green</h1></div>
+  <div id="subtitle"><h2>Connecting to the University of Southampton fileshares using Linux</h2></div>
+
+    <p>All these instructions are Ubuntu specific, they might need slight modification for other distributions.</p>
+    <p>In order to mount any of these shares you need a <a href="http://www.samba.org">Samba</a> client installed, on Ubuntu this is the package <a href="https://launchpad.net/ubuntu/+source/cifs-utils">cifs-utils.</a></p>
+    <p>To connect to the <a href="http://www.southampton.ac.uk/isolutions/services/accessing_filestore_away_own_computer/">filestore</a>:</p>
+    <code>sudo mount -t cifs -o username=<strong>USERNAME</strong> //filestore.soton.ac.uk/users/<strong>USERNAME</strong> /mnt/<strong>FOLDER</strong></code>
+    <p>Replacing <strong>USERNAME</strong> and <strong>FOLDER</strong> as necessary:  <strong>USERNAME</strong> should be your University of Southampton username, and <strong>FOLDER</strong> should be the local folder you wish to mount to, this folder must already exist and should not be the mount point of any other filesystem.</p>
+    <p>Similarly, to connect to webfiles (where your personal website is stored):</p>
+    <code>sudo mount -t cifs -o user=<strong>USERNAME</strong> //webfiles.soton.ac.uk/<strong>USERNAME</strong> /mnt/<strong>FOLDER</strong></code>
+    <p>To connect to scan2folder (previously called 'resources', where the managed printers store scanned documents, etc):</p>
+    <code>sudo mount -t cifs -o user=<strong>USERNAME</strong> //scan2folder.soton.ac.uk/ScannedDocuments/ /mnt/<strong>FOLDER</strong></code>
+    <p>Here are the instructions for the filestore, as they would appear in <a href="http://en.wikipedia.org/wiki/fstab">/etc/fstab</a>:</p>
+      <table style="border-style:none;border-spacing:0.75em;">
+	<tr>
+	  <td><code>&lt;file system&gt;</code></td>
+	  <td><code>&lt;mount point&gt;</code></td>
+	  <td><code>&lt;type&gt;</code></td>
+	  <td><code>&lt;options&gt;</code></td>
+	  <td><code>&lt;dump&gt;</code></td>
+	  <td><code>&lt;pass&gt;</code></td>
+	</tr>
+	<tr>
+	  <td><code>//filestore.soton.ac.uk/users/<strong>USERNAME</strong></code></td>
+	  <td><code>/mnt/<strong>FOLDER</strong></code></td>
+	  <td><code>cifs</code></td>
+	  <td><code>noauto,rw,username=<strong>USERNAME</strong></code></td>
+	  <td><code>0</code></td>
+	  <td><code>0</code></td>
+	</tr>
+      </table>
+</div>
+</body>
+</html>

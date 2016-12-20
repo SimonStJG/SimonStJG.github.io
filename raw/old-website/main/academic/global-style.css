@@ -1,0 +1,39 @@
+body {
+  /*background-image:url('Sky.JPG');*/
+  background-color:lightgrey;
+  margin:0px;
+}
+
+div#title {
+  text-align:center;
+  width:960px;
+  background-color:#052F2A;     /*#24323d;*/
+  border-style:none none solid none;
+  border-width:1px;
+}
+
+div#title h1{
+  font-family: 'Raleway', sans-serif;
+  font-weight:300;
+  font-size:300%;
+  color:white;
+  margin:0px;
+}
+
+div#container {
+  width:960px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:0px;
+  margin-bottom:0px;
+  background-color:white;
+}
+
+div#footer {
+  width:960px;
+  clear:both;
+  font-size:80%;
+  text-align:right;
+  border-style:solid none none none;
+  border-width:1px;
+}

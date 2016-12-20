@@ -1,0 +1,55 @@
+div#leftcolumn {
+  float:left;
+  width:480px;
+}
+
+div#rightcolumn {
+  float:right;
+  width:480px;
+}
+
+div.block {
+  margin:30px;
+  padding:10px;
+  /*background-color:white;*/
+}
+
+div.block h2 {
+  margin:0px;
+  color:#AA1519; /*#ff2402;*/
+  font-family: 'Raleway', sans-serif;
+  font-weight:300;
+}
+
+div.block-title {
+  border-style:none none solid none;
+  border-color:#AA1519;
+  border-width:1px;
+}
+
+span.contactsubheading {
+  width:80px;
+  display:inline-block;  /* Else will ignore width command */
+  text-align:right;
+  font-weight:bold;
+}
+
+span.beginquote {
+   float: left;
+   margin-top: -25px;
+   font-size: 500%;
+   color: #AA1519;
+ }
+
+span.endquote {
+   float: right;
+   margin-top: -15px;
+   font-size: 500%;
+   margin-bottom:-50px;
+   color: #AA1519;
+ }
+
+p#weyl {
+   clear:both;
+   text-align:right;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<script type="text/javascript" src="rns-list1.js"></script>
+<script type="text/javascript" src="rns-list2.js"></script>
+<script type="text/javascript">
+  function name(){
+    var a = list1[Math.floor(Math.random() * list1.length)];
+    var b = list2[Math.floor(Math.random() * list2.length)];
+    document.getElementById("name").innerHTML = a + b;
+  }
+</script> 
+<link rel="stylesheet" type="text/css" href="rns-style.css" />
+<title>Roomba Naming Service</title>
+</head>
+<body onLoad="name()">
+  <div id="title">Roomba Naming Service</div>
+  <div id="container">
+    <div id="dividing-line"></div>
+    <p>The little elves of the RNS (Roomba Naming Service) have deemed the following to be appropriate for you:</p>
+    <p id="name">Something</p>
+    <p><a href="javascript:name();">I hate it.</a></p>
+  </div>
+  <footer>This little gem was brought to you by <a href="http://www.simonstjg.org/">Simon</a> and <a href="http://www.jesslindenwhite.com">Jess.</a></footer>
+</body>
+</html>

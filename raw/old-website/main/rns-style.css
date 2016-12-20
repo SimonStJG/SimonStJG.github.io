@@ -1,0 +1,56 @@
+@media screen {
+ 
+  body {
+    background-color:#F0F0F0;
+  }
+
+  div#container {
+    width: 700px; 
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  div#title {
+    font-family: Helvetica, sans-serif;
+    font-weight:300;
+    font-size:400%;
+    margin-top:1em;
+  }
+   
+  div#dividing-line {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:2.5em;
+    margin-bottom:5em;
+    height:0.2em;
+    width:25em;
+    background-color:#2E0854;
+  }
+
+  p, div {
+    text-align:center;
+  }
+
+  p#name {
+    font-family: Helvetica, sans-serif;
+    font-size:400%;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+  } 
+
+  a {
+    color:#2E0854;
+  }
+
+  footer {
+    clear:both;
+    display:block;
+    position:fixed;
+    bottom:0;
+    height:1.5em;
+    font-size:65%;
+    text-align:right;
+    width:99%;
+    border:1px;
+  }
+}

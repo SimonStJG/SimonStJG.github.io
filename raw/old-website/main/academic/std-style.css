@@ -1,0 +1,13 @@
+div#subtitle {
+  border-style:none none solid none;
+  border-color:#AA1519;
+  border-width:1px;
+}
+
+div#subtitle h2 {
+  color:#AA1519;
+  font-family: 'Raleway', sans-serif;
+  font-weight:300;
+  margin-bottom:0px;
+  margin-top:50px;
+}

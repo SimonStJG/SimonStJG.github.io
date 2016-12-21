@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "arXivHaiku"
+no-grid-title: true
 date:   2016-10-15
 tags: code
 thumbnail: arxivhaiku-thumbnail.png

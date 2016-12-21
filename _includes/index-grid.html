@@ -11,9 +11,11 @@
         <div class="gr-col overlay-parent">
           <a href="{{ post.url | prepend: site.baseurl }}">
             <img class="opaque-image" src="images/{{ post.thumbnail }}" />
-            <div class="overlay-text-wrapper">
-              <h2 class="overlay-text">{{ post.title }}</h2>
-            </div>
+            {% unless post.no-grid-title %}
+              <div class="overlay-text-wrapper">
+                <h2 class="overlay-text">{{ post.title }}</h2>
+              </div>
+            {% endunless %}
           </a>
         </div>
 

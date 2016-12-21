@@ -1,70 +1,74 @@
-/**
- * Grid mixin initially borrowed from:
- * http://thesassway.com/intermediate/simple-grid-mixins
- * Subsequently ruined by using margin instead of padding.
- */
-
-
 // TODO SJG Check screen width etc
-// TODO SJG Verify fonts for grid
+div.index-grid { 
 
-.gr-row {
-  font-size: 0;
-}
+  > h1 {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $grey-color-light;
+  }
 
-@mixin col($sum, $gap: 1em, $align: top) {
-  $gap_offset: 2 * $gap;
-  $flange: percentage(1/$sum);
-  width: calc(#{$flange} - #{$gap_offset});
+  /**
+   * Grid mixin initially borrowed from:
+   * http://thesassway.com/intermediate/simple-grid-mixins
+   * Subsequently ruined by using margin instead of padding.
+   */
+  .gr-row {
+    font-size: 0;
+  }
 
-  // There is some trickery here with margins.
-  font-size: 16px;
-  display: inline-block;
-  vertical-align: $align;
-  box-sizing: border-box;
-  margin: $gap;
-  margin: $gap;
+  @mixin col($sum, $gap: 1em, $align: top) {
+    $gap_offset: 2 * $gap;
+    $flange: percentage(1/$sum);
+    width: calc(#{$flange} - #{$gap_offset});
 
-  // TODO
-  // @media only screen and (min-width: 768px) {
-  //   width: percentage($col/$sum);
-  //   vertical-align: $align;
-  // }
-}
+    // There is some trickery here with margins?  See font-size in .gr-row.
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: $align;
+    box-sizing: border-box;
+    margin: $gap;
+    margin: $gap;
 
-.gr-col {
-  // If you change this, you need to update it in index.html too.
-  @include col(3);  
-}
+    // TODO Investigate
+    // @media only screen and (max-width: 768px) {
+    //   width: percentage($col/$sum);
+    //   vertical-align: $align;
+    // }
+  }
 
-/**
- * Text overlays
- */
+  .gr-col {
+    // If you change this, you need to update it in index.html too.
+    @include col(3);  
+  }
 
-.overlay-parent {
-  position: relative;
-}
+  /**
+   * Text overlays and opaque images.
+   */
+  .overlay-parent {
+    position: relative;
+  }
 
-.overlay-text-wrapper {
-  text-align: center;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+  .overlay-text-wrapper {
+    text-align: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 
-  // Without this, hover won't work properly on opaque-image.
-  pointer-events: none;
-}
+    // Without this, hover won't work properly on opaque-image.
+    pointer-events: none;
+  }
 
-.overlay-text {
-  color: $brand-color;
-}
+  .overlay-text {
+    color: white;
+  }
 
-.opaque-image {
-  width: 100%;
-  opacity: 0.2;
+  .opaque-image {
+    width: 100%;
+    opacity: 1;
 
-  &:hover {
-    opacity: 0.7;
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }

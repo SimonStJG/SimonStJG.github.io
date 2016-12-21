@@ -1,28 +1,30 @@
-<h1>{{ include.title }}</h1>
+<div class="index-grid">
+  <h1>{{ include.title }}</h1>
 
-{% for post in include.tags %}
-  {% comment %}  Loop indices begin at 1 :(  {% endcomment %}
-  {% capture length_mod %}{{ forloop.index | minus: 1 | modulo : 3 }}{% endcapture %}
+  {% for post in include.tags %}
+    {% comment %}  Loop indices begin at 1 :(  {% endcomment %}
+    {% capture length_mod %}{{ forloop.index | minus: 1 | modulo : 3 }}{% endcapture %}
 
-  {% if length_mod == '0' %}
-    <div class="gr-row">
-  {% endif %}
-      <div class="gr-col overlay-parent">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <img class="opaque-image" src="images/{{ post.thumbnail }}" />
-          <div class="overlay-text-wrapper">
-            <h2 class="overlay-text">{{ post.title }}</h2>
-          </div>
-        </a>
-      </div>
-
-  {% if length_mod == '2' %}  
-    </div> 
-  {% endif %}
-  {% if forloop.last %}
-    {% if length_mod != '2' %}
-      </div>
+    {% if length_mod == '0' %}
+      <div class="gr-row">
     {% endif %}
-  {% endif %}
+        <div class="gr-col overlay-parent">
+          <a href="{{ post.url | prepend: site.baseurl }}">
+            <img class="opaque-image" src="images/{{ post.thumbnail }}" />
+            <div class="overlay-text-wrapper">
+              <h2 class="overlay-text">{{ post.title }}</h2>
+            </div>
+          </a>
+        </div>
 
-{% endfor %}
+    {% if length_mod == '2' %}  
+      </div> 
+    {% endif %}
+    {% if forloop.last %}
+      {% if length_mod != '2' %}
+        </div>
+      {% endif %}
+    {% endif %}
+
+  {% endfor %}
+</div>

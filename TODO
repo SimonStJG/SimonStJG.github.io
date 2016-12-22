@@ -1,5 +1,4 @@
 TODO:
   Put a decent picture in for the stompbox.
-  Test metatags, pictures are not working :(.  Do metatags properly, including handling pictures / thumbnails.
-  Test on all device sizes.
-  Compress thumbnails - note this will break facebook OG as well :( https://developers.facebook.com/tools/debug 
+  Tidy up some of the responsive design.  Test on all device sizes.
+  Compress thumbnails.

@@ -19,21 +19,4 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
-  <!-- Facebook Open Graph Tags -->
-  <meta property="og:url"                content="{{ site.url }}{{ page.url }}" />
-  <meta property="og:type"               content="article" />
-  <meta property="og:title"              content="{{ page.title }}" />
-  <!-- If description is empty, it's OK because facebook makes up a nice one anyway. -->
-  <meta property="og:description"        content="{{ description }}" />
-  {% if page.thumbnail %}
-  <meta property="og:image"              content="{{ site.url }}/images/{{ page.thumbnail }}" />
-  {% endif %}
-  
-  <!-- Twitter Card Tags -->
-  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{{ page.title }}">
-  <meta name="twitter:description" content="{{ description }}">
-  <meta name="twitter:image" content="{{ site.url }}/images/{{ page.thumbnail }}">
-
 </head>

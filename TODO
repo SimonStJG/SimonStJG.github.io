@@ -1,9 +1,5 @@
 TODO:
-  Rename the RAW folder to something less crap.
-  Find a picture for the story generator.
   Put a decent picture in for the stompbox.
   Test metatags, pictures are not working :(.  Do metatags properly, including handling pictures / thumbnails.
   Test on all device sizes.
-  Merge old personal website.
-  Merge old academic website.
   Compress thumbnails - note this will break facebook OG as well :( https://developers.facebook.com/tools/debug 

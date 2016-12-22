@@ -198,6 +198,7 @@ pre {
     padding-left: $spacing-unit;
     @extend %clearfix;
 
+    // TODO What is this, and why?
     @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
@@ -249,11 +250,17 @@ pre {
  * Images
  */
 img.float-left {
-    width: 25%;
-    float: left; 
+    width: 100%;
+    @media (min-width: $on-laptop) {
+        width: 25%;
+        float: left;
+    }
 }
 
 img.float-right {
-    width: 25%;
-    float: right; 
+    width: 100%;
+    @media (min-width: $on-laptop) {
+        width: 25%;
+        float: right; 
+    }
 }

@@ -43,7 +43,7 @@
         }
     }
 
-    @include media-query($on-palm) {
+    @include small-screen {
         position: absolute;
         top: 9px;
         right: $spacing-unit / 2;
@@ -166,7 +166,7 @@
     letter-spacing: -1px;
     line-height: 1;
 
-    @include media-query($on-laptop) {
+    @include small-screen {
         font-size: 36px;
     }
 }

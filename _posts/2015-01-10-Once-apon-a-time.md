@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Once upon a time"
+title:  "Once upon<br/> a time"
 date:   2014-12-12
 tags: code
 thumbnail: once-apon-a-time-thumbnail.jpg

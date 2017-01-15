@@ -35,7 +35,7 @@ div.index-grid {
     margin-top: 1em;
     margin-bottom: 1em;
     
-    @media (min-width: $on-palm) {
+    @include big-screen {
     // If you change this, you need to update it in index.html too.
       @include col(3);  
     }

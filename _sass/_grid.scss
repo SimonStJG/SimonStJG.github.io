@@ -52,8 +52,13 @@ div.index-grid {
     text-align: center;
     left: 0;
     position: absolute;
-    top: 0;
     width: 100%;
+
+    // Causes the text to be centered  vertically.  
+    // Relies on the fact that "top" measures from the parent, wheras
+    // transform measures from itself.
+    top: 50%;
+    transform: translateY(-50%);
 
     // Without this, hover won't work properly on opaque-image.
     pointer-events: none;

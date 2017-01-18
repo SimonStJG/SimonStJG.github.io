@@ -7,11 +7,10 @@ div.index-grid {
   }
 
   /**
-   * Grid mixin initially borrowed from:
-   * http://thesassway.com/intermediate/simple-grid-mixins
-   * Subsequently ruined by using margin instead of padding.
+   * TODO Rename!  More like a container for each section.  Also I'm not sure we need 
+   * this trickery with margins?
    */
-  .gr-row {
+  .gr-container {
     font-size: 0;
   }
 
@@ -27,7 +26,7 @@ div.index-grid {
   }
 
   .gr-col {
-    // There is some trickery here with margins?  See font-size in .gr-row.
+    // There is some trickery here with margins?  See font-size in .gr-container.
     font-size: 16px;
 
     margin-left: auto;
@@ -36,8 +35,15 @@ div.index-grid {
     margin-bottom: 1em;
     
     @include big-screen {
-    // If you change this, you need to update it in index.html too.
       @include col(3);  
+    }
+
+    @include small-screen {
+      @include col(2);
+    }
+
+    @include very-small-screen {
+      @include col(1);
     }
   }
 

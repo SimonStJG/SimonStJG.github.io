@@ -6,22 +6,24 @@ tags: making
 thumbnail: maths-thumbnail.jpg
 ---
 
-SIM details:
-giffgaff username / password
-  
-  flimflamarduino
-  Flimflam!
-  Simon.StJG+arduino@gmail.com
-  07716946690
+[comment]: # SIM details:
+[comment]: #giffgaff username / password
+[comment]: # 
+[comment]: #  flimflamarduino
+[comment]: #  Flimflam!
+[comment]: #  Simon.StJG+arduino@gmail.com
+[comment]: #  07716946690
 
+Add a description.
+
+# Items #
 
 Daemilanove https://www.arduino.cc/en/Main/ArduinoBoardDuemilanove
 
-Cheap chinese rip of of this http://wiki.seeed.cc/GPRS_Shield_v1.0/
-  Differences: 
-     - software / hardware serial switch is backwards.
-     - Seems to only support a baud rate of 4800.
-
+Cheap rip off of the [Seeedstudio GPRS shield v1.0](http://wiki.seeed.cc/GPRS_Shield_v1.0/) - the price was a bit too good to be true.  Differences I've discovered so far: 
+* Software / hardware serial switch is backwards.
+* Seems to only support a baud rates $$( \le 4800 $$)..
+* They moved the power pin from 9 to 6.  Sounds so matter of fact written here.  I was very angry when I figured that one out.
 Why are they wiring it up so weirdly here?  http://www.hobbyist.co.nz/?q=arduino-gsm-module
 
 ## Detecting the baud rate ##
@@ -116,12 +118,6 @@ Problems with other peoples libraries:
 
  - I think we're done!
 
-
-
- ----------------
-
- Other weird shit
- They moved the power pin from 9 to 6.  Sounds so matter of fact written here.  I was very angry when I figured that one out.
 
 
  ----------------

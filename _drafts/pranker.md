@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pranker"
+title:  "TODO"
 date:   2014-10-01
 tags: making
 thumbnail: maths-thumbnail.jpg
@@ -16,93 +16,35 @@ thumbnail: maths-thumbnail.jpg
 
 Add a description.
 
-# Items #
+## Items ##
 
-Daemilanove https://www.arduino.cc/en/Main/ArduinoBoardDuemilanove
+[Arduino Daemilanove](https://www.arduino.cc/en/Main/ArduinoBoardDuemilanove)
 
 Cheap rip off of the [Seeedstudio GPRS shield v1.0](http://wiki.seeed.cc/GPRS_Shield_v1.0/) - the price was a bit too good to be true.  Differences I've discovered so far: 
 * Software / hardware serial switch is backwards.
-* Seems to only support a baud rates $$( \le 4800 $$)..
-* They moved the power pin from 9 to 6.  Sounds so matter of fact written here.  I was very angry when I figured that one out.
-Why are they wiring it up so weirdly here?  http://www.hobbyist.co.nz/?q=arduino-gsm-module
+* Seems to only support a baud rates $$( \le 4800 $$).
+* They moved the power pin from 9 to 6.  
+All this sounds so matter of fact written here, but each one caused me a lot of irritation to discover!  
 
-## Detecting the baud rate ##
+[Adafruit's Audio FX Mini](https://www.adafruit.com/product/2341) 
 
-```
-/**
- * Discover baud rate of GPRS Modem, by trying all the standard baud rates in turn.
- * 
- * Listen on the Arduino hardware UART at 19200 bps 8-N-1.
- */
-#include <SoftwareSerial.h>
+Along with misc LEDs, power supply, etc.
 
-const int BAUD_RATES[] = {600, 1200, 2400, 4800, 9600, 14400, 19200};
+## Getting started ##
 
-SoftwareSerial GPRS(7, 8);
-unsigned char buffer[64]; 
-int count=0; 
+The chip powering the GPRS shield is a SIM900, which speaks an incredible languages called the [Hayes Command Set](https://en.wikipedia.org/wiki/Hayes_command_set), well technically an extension of Hayes, since that only supported a few simple commands.  You communicate via Serial in a master/slave fashion, where the modem is the slave.  For example, here we set up a call:
+ TODO Add this in
+Every command begins with AT (for "Attention"!) and then the modem responds, often with OK.
 
-void setup() {
-    Serial.begin(19200);
+Issues when the modem sends information back to the master, eg. DTMF.
 
-    for (int baud_rate: BAUD_RATES) {
-        Serial.print("testing at");
-        Serial.print(baud_rate);
-        Serial.print("\n");
-        
-        GPRS.begin(baud_rate);  
-        GPRS.write("AT\r\n");
+Something about a profusion of standards.
 
-        delay(3000);
-        read_from_gprs();
-        delay(3000);
-        read_from_gprs();
-        
-    }
-}
+None of the existing libraries handle information being sent back well, but it's too much effort to write your own, would love to know how modern day mobile phones handle this.  Apparently they do have modems in them which speak this languages!  See [this article](http://www.osnews.com/story/27416/The_second_operating_system_hiding_in_every_mobile_phone) pointing out some of the interesting security implications of this.
 
-void loop() {}
+## Fun with DTMF ##
 
-void read_from_gprs() {
-   if (GPRS.available()) { 
-        while(GPRS.available()) { 
-            buffer[count++] = GPRS.read();  
-            if(count == 64) break;
-        }
-        Serial.write(buffer,count);
-        count = 0;                     
-    }
-}
-
-```
-
-Which prints 
-```
-testing at600
-B�testing at1200
-k�testing at2400
-!�H�testing at4800
-AT
-
-OK
-testing at9600
-����testing at14400
-
-```
-So it only supports 4800.
-
-This actually took be ages, because I missed that you have to use windows style line endings, causing AT to be echoed at 4800, but nothing else.)
-
-## First communications test ##
-
-Fairly minimal library is available here: https://github.com/Seeed-Studio/GPRS_SIM900
-
-With it, I can read and send text messages.
-
-## TODO ##
-
-http://www.on-time.com/ddj0011.htm
-
+Issues with the libraries and not detecting DTMF very well.
 
 Here is the reference https://www.espruino.com/datasheets/SIM900_AT.pdf
 
@@ -118,20 +60,10 @@ Problems with other peoples libraries:
 
  - I think we're done!
 
-
-
  ----------------
 
- Something something why doesn't power work properly/
+## Code ## 
 
- ----------------
+There is no point in a circuit diagram, as all the boards just connect to each other directly, as you can see from the image (TODO link to image)  
 
-  The arduino has 14 pins, of which 
-  2 (0,1) for hardware serial, used for debugging via USB.
-  3 (6,7,8) - taken by the shield.
-  2 others for the Status LEDs
-  Which leaves 7 for triggering the sounds, which isn't enough :|
-
-  So I used a CMOS 4501 multiplexer, which allows you to address 8 of the triggers with 4 output pins.
-
------------------
+TODO add link to code in github somewhere

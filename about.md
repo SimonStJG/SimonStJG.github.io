@@ -8,4 +8,4 @@ This is every single personal portfolio site you've ever seen.  It's even on git
 
 {% include social-media-list.html %}
 
-There's more info on this website [here]({% post_url 2016-12-15-Website %})
+There's more info on this website [here]({% post_url 2016-12-15-Websites %})

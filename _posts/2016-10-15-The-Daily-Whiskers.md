@@ -6,10 +6,10 @@ tags: code
 thumbnail: dailywhiskers-thumbnail.jpg
 ---
 
-Pulls pictures from Reddit's [/r/cats](https://www.reddit.com/r/cats) every morning, emails them to you with a funny name.  
+The upshot of a late-night conversation about silly cat names, a tiny python script which pulls pictures from Reddit's [/r/cats](https://www.reddit.com/r/cats) every morning, and emails them to you with a funny name.
 
 ![Example Daily Whiskers](/images/daily-whiskers-full.png){: .float-right}
 
-Currently running on my Raspberry PI and even available on github, at [SimonStJG/TheDailyWhiskers](https://github.com/SimonStJG/TheDailyWhiskers)
+Currently running on ~~my Raspberry PI~~ one of my [Raspberry PIs](https://www.raspberrypi.org/).  Available on github, [SimonStJG/TheDailyWhiskers](https://github.com/SimonStJG/TheDailyWhiskers)
 
 Thumbnail picture credit: [www.reddit.com/r/cats/comments/5g87h3/his_name_is_waffles](https://www.reddit.com/r/cats/comments/5g87h3/his_name_is_waffles/)

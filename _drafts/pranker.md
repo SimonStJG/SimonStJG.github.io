@@ -66,4 +66,27 @@ Problems with other peoples libraries:
 
 There is no point in a circuit diagram, as all the boards just connect to each other directly, as you can see from the image (TODO link to image)  
 
-TODO add link to code in github somewhere
+The code is available [On Github](https://github.com/SimonStJG/magic-phone).  
+
+
+## Pictures from making it ##
+
+
+Add some of these.
+
+
+
+-----
+
+Can't use both software serials because they interfere somehow..
+
+So must use h/w.  Makes debug a lot of fun.
+
+Outrageously, the GPRS lib was print to the HardwareSerial which weren't disabled properly when debugging was switched off.  This caused sporadic errors with the sound board when the GPRS shield printed debugging  information into the sound boards input.  
+
+This article is in danger of becoming a list of ways in which this project wound me up.
+
+
+## Making of the plinth? ##
+
+Could drill all the wires into the sides?

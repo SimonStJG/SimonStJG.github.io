@@ -241,24 +241,27 @@ pre {
 /**
  * Images 
  */
-%img-float-base {
-    width: 25%;
-
+@mixin img-float($direction, $width) {
     @include small-screen {
         width: 100%;
         float: none;
     }
-}
-
-@mixin img-float($direction) {
-    @extend %img-float-base;
     float: $direction;
+    width: $width;
 }
 
 img.float-left {
-    @include img-float(left);
+    @include img-float(left, 25%);
 }
 
 img.float-right {
-    @include img-float(right);
+    @include img-float(right, 25%);
+}
+
+img.float-left-large {
+    @include img-float(left, 50%);
+}
+
+img.float-right-large {
+    @include img-float(right, 50%);
 }

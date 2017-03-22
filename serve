@@ -1,4 +1,4 @@
 #!/bin/sh
 
 bundle exec jekyll build --safe
-jekyll serve
+bundle exec jekyll serve

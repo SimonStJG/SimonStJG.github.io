@@ -3,14 +3,14 @@ layout: post
 title:  "Cajon"
 date:   2016-03-12 12:43:39 +0000
 tags: making
-thumbnail: cajon-thumbnail.jpg
+description: "Building a large percussive wooden box"
 ---
 
-A [Cajón](https://en.wikipedia.org/wiki/Caj%C3%B3n) is basically a huge wooden box which you sit on and then hit the front of to make a bass-y drum sound, or a snare-y sound if you put a snare in it.
+A [Cajón](https://en.wikipedia.org/wiki/Caj%C3%B3n) is a musical instrument which originated in Peru.  It's a large wooden box which you sit on and then hit the front of to make a low drum sound, or a snare sound if you put a snare in it.
 
 ## Design ##
 
-It's a glorified wooden box made of plywood with a snare inside.  The only important detail is that the front face needs to be made out of thinner plywood so it can act like the skin of a drum.
+The only important detail is that the front face needs to be made out of thinner plywood so it can act like the skin of a drum.
 
 ## Details ##
 

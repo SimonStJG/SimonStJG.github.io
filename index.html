@@ -4,8 +4,16 @@ layout: default
 
 <div class="home">
 
-  {% include index-grid.html title="Code" tags=site.tags.code %}
-  {% include index-grid.html title="Making" tags=site.tags.making %}
-  {% include index-grid.html title="Maths" tags=site.tags.maths %}
+<h1>{{ include.title }}</h1>
+
+<h2>Projects</h2>
+
+<h4> Things I've built over the years.</h4>
+
+<ul>
+{% for post in site.posts %}
+  <li><a href="{{ post.url | prepend: site.baseurl }}">{{post.date | date: '%Y, %b'}} {{post.title}}</a>: {{post.description}}</li>
+{% endfor %}
+</ul>
 
 </div>

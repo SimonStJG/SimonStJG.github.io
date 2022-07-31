@@ -2,8 +2,7 @@
 layout: post
 title:  "The Daily Whiskers"
 date:   2016-10-15
-tags: code
-thumbnail: dailywhiskers-thumbnail.jpg
+description: "A tiny python script which pulls pictures from Reddit's r/cats and emails them to you with a silly name"
 ---
 
 The upshot of a late-night conversation about silly cat names, a tiny python script which pulls pictures from Reddit's [/r/cats](https://www.reddit.com/r/cats) every morning, and emails them to you with a funny name.

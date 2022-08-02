@@ -16,3 +16,7 @@ github_username: "SimonStJG"
 markdown: kramdown
 
 permalink: /:year/:month/:title
+
+# Compress CSS
+sass:
+    style: compressed

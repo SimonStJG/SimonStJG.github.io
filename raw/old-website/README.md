@@ -1,4 +1,0 @@
-web
-===
-
-Personal Website

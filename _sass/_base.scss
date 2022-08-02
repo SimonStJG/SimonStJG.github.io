@@ -26,7 +26,7 @@ body {
     font-kerning: normal;
 
 
-     h1 {
+    h1 {
     font-size: 40px;
 
     @include small-screen {
@@ -221,7 +221,6 @@ pre {
  * Icons
  */
 .icon {
-
     > svg {
         display: inline-block;
         width: 16px;
@@ -234,34 +233,5 @@ pre {
 }
 
 .icon-label {
-    padding-left: 0.25em;
-}
-
-
-/**
- * Images 
- */
-@mixin img-float($direction, $width) {
-    @include small-screen {
-        width: 100%;
-        float: none;
-    }
-    float: $direction;
-    width: $width;
-}
-
-img.float-left {
-    @include img-float(left, 25%);
-}
-
-img.float-right {
-    @include img-float(right, 25%);
-}
-
-img.float-left-large {
-    @include img-float(left, 50%);
-}
-
-img.float-right-large {
-    @include img-float(right, 50%);
+    padding: 0.25em;
 }

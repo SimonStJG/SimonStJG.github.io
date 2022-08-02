@@ -1,23 +1,6 @@
 ## Run locally
 
-Install ruby then run:
-```
-bundle install
-./serve
-```
-
-## Deploy
-
-Push to github pages
-
-## TODO
-
-* Semantic HTML
-* Re-style
-* lordy phone
-* photobooth
-* reactions game
-* any github stuff of interest
-* CVEs
-* Get rid of pictures I don't own
-* Get rid of tags?
+1. Install ruby, e.g. via `sudo apt install ruby`. 
+2. Install bundler gem, i.e. `sudo gem install bundler`. 
+3. Install dependencies with `bundle install`.
+4. Build and serve website locally with `./serve`.

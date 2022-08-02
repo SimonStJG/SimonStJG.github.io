@@ -2,8 +2,8 @@
 layout: post
 title:  "Cajon"
 date:   2016-03-12 12:43:39 +0000
-tags: making
-description: "Building a large percussive wooden box"
+description: "Building a large percussive wooden box."
+has_mathjax: True
 ---
 
 A [Cajón](https://en.wikipedia.org/wiki/Caj%C3%B3n) is a musical instrument which originated in Peru.  It's a large wooden box which you sit on and then hit the front of to make a low drum sound, or a snare sound if you put a snare in it.

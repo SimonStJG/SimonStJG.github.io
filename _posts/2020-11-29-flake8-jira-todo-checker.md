@@ -3,7 +3,7 @@ layout: post
 title:  "flake8-jira-todo-checker"
 description: "Flake8 plugin to check that every TODO, FIXME, QQ etc comment has a valid JIRA ID next to it."
 date:   2020-11-29
-tags: code
+has_mathjax: False
 ---
 
 Flake8 plugin to check that:

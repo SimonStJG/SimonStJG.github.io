@@ -2,8 +2,8 @@
 layout: post
 title:  "Once Upon A Time"
 date:   2014-12-12
-tags: code
-description: "A choose your own adventure game"
+description: "A choose your own adventure game."
+has_mathjax: False
 ---
 
 "Choose your own adventure" style game, basic template available [here](/raw/once-upon-a-time/#/)

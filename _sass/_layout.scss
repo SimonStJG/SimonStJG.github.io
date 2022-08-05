@@ -13,12 +13,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
 }
 
 .site-title {
     font-family: $title-font-family;
-    font-size: 26px;
+    font-size: 36px;
     font-weight: $title-font-weight;
     line-height: 56px;
     letter-spacing: -1px;
@@ -32,7 +32,7 @@
 
 .social-media-list {    
     list-style: none;
-    margin: 0;
+    margin: $spacing-unit / 2;
     line-height: $spacing-unit;
     text-align: left;
 }
@@ -51,8 +51,6 @@
 
 .footer {
     font-size: 15px;
-    color: $grey-color;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -111,11 +109,11 @@
 }
 
 img.float-left {
-    @include img-float(left, 25%);
+    @include img-float(left, 35%);
 }
 
 img.float-right {
-    @include img-float(right, 25%);
+    @include img-float(right, 35%);
 }
 
 img.float-left-large {

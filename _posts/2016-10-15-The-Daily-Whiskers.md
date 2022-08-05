@@ -11,5 +11,3 @@ The upshot of a late-night conversation about silly cat names, a tiny python scr
 ![Example Daily Whiskers](/images/daily-whiskers-full.png){: .float-right}
 
 Currently running on ~~my Raspberry PI~~ one of my [Raspberry PIs](https://www.raspberrypi.org/).  Available on github, [SimonStJG/TheDailyWhiskers](https://github.com/SimonStJG/TheDailyWhiskers)
-
-Thumbnail picture credit: [www.reddit.com/r/cats/comments/5g87h3/his_name_is_waffles](https://www.reddit.com/r/cats/comments/5g87h3/his_name_is_waffles/)

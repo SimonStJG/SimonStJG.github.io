@@ -1,0 +1,5 @@
+{
+	"name": "website",
+	"image": "mcr.microsoft.com/devcontainers/ruby:1-3.2-bookworm",
+	"postCreateCommand": "bundle install"
+}
